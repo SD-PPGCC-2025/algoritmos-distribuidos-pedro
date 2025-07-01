@@ -1,0 +1,20 @@
+
+syntax = "proto3";
+
+package request;
+
+// The book store service definition.
+service NodeService {
+  // Retrieve a book
+  rpc process(ProcessRequest) returns (Response) {}
+}
+
+
+message ProcessRequest {
+  string message = 1;
+}
+
+
+message Response {
+  string message = 1;
+}

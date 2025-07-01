@@ -1,0 +1,25 @@
+[package]
+name = "algoritmos-distribuidos-pedro"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tonic = "0.7.1"
+prost = "0.10.1"
+rand = "0.9.1"
+
+[build-dependencies]
+tonic-build = "0.7.2"
+
+[[bin]]
+name = "node_1"
+path = "src/node_1/main.rs"
+
+[[bin]]
+name = "node_2"
+path = "src/node_2/main.rs"
+
+[[bin]]
+name = "4C_wave_detection"
+path = "src/4c/main.rs"
